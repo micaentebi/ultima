@@ -1,0 +1,601 @@
+
+@import "abstracts/variables";
+@import "abstracts/mixin";
+@import "abstracts/extend";
+@import "abstracts/fonts";
+@import "abstracts/nav";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+
+.bg-colorNav {
+    text-align: center;
+
+    .logo {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        margin-top: 0%;}
+        .contenedor {
+            display: grid;
+            height: 40vh;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-areas: 
+            'img-uno img-dos img-tres';
+            row-gap: 0.5rem;
+            column-gap: 0.5rem;
+            margin: 2rem 1rem;
+            a{
+                img{
+                    width: 100%;
+                    height: 50%;
+                    object-fit: cover;
+                }
+            }
+            .img1 {
+                grid-area: img-uno;
+            }
+            .img2 {
+            grid-area: img-dos;
+            }
+            
+            .img3 {
+                grid-area: img-tres;
+            
+            }
+            
+        .item {
+                text-align: center;
+                background-color:#e0c2a6cb ;
+                margin:10%;
+                padding: 15%;
+                box-shadow: 5px 1px 20px $subcolor-letras;
+                flex-direction: row;
+                h5{
+                    color: $color-letras ;
+                    font-size: 150%;
+                    text-align: center;
+                    font-family: cursive;
+                    margin-top: 0%;
+                    margin-inline-start: 0;
+                    font-weight: lighter;
+                    margin-bottom: 0%  ;
+                }
+                a{
+                text-decoration: none;
+                align-items: center;
+                color: $color-letras ;
+                }
+        }
+    }
+            h1{
+                color: $color-letras ;
+                font-size: 250%;
+                text-align: center;
+                font-family: cursive;
+                margin-top: 0%;
+                margin-inline-start: 0;
+                font-weight: lighter;
+                margin-bottom: 0%  ;
+            }
+            
+        }
+    
+
+footer {
+   color: $color-letras;
+   font-size: 15px;
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-bottom: 0%;
+   margin-top: 6%;
+   margin-inline-start: 0;
+
+}
+
+/*Acerca de mi*/
+.logoAcerca {
+    text-align: center;
+    margin-top: 0%; 
+    margin-bottom: 0%;
+    position: static;
+}
+
+.contenedorCaro {
+    display: flex;
+    margin-left:10%;
+    margin-top: 0%;
+    .fotoCaro{
+        text-align: center;
+        margin-top: 0%;}
+    main{
+        h3{
+            color:$color-letras ;
+            font-weight:lighter ;
+            font-size: 200%;
+            margin-bottom: 0%;
+            font-family: 'miFuente' ;
+            font-style: italic;   
+        } 
+        .biografia{
+            color: $subcolor-letras; 
+            font-size: 85%;
+            font-family: "B612 Mono", monospace;
+            font-weight: 400;
+            font-style: normal;
+            margin-top: 3%;
+            margin-right: 20%;
+            font-weight: lighter;
+            text-align: justify;   
+            margin-left: 1%;
+            
+            span{
+                 font-weight:800 ; 
+            }
+        }   
+        }
+    }
+    
+    .consultorio{
+            text-align: center;
+            h3{
+            color:$color-letras ;
+            font-weight:lighter ;
+            font-size: 200%;
+            margin-bottom: 0%;
+            font-family: 'miFuente' ;
+            font-style: italic;   
+            text-align: center;
+             } 
+        iframe{
+            text-align: center;
+            margin-bottom: 1%;
+        }
+        }
+    
+    .instagram-media{
+            text-align: center;
+            margin-left: 39%;
+         }
+
+    .contacto-ig{
+        margin-left: 42%;
+        margin-bottom: 1%;
+       a{
+        text-decoration: none;
+        img{ 
+            display: inline-block;
+          }
+       }
+       p{
+        display: inline-block;
+        font-family: 'fuente2';
+        color: $color-letras;
+
+       } 
+    }
+
+    /*Incio de sesion*/
+
+    .logoInicio {
+        text-align: center;
+        margin-top: 0%;
+        position:static;
+     }
+
+     .form-iniciarsesion{
+        width: 500px;
+        height: 250px;
+        background-color:#e0c2a6cb ;
+        margin:auto;
+        margin-top: 30px;
+        box-shadow: 5px 1px 20px #9f754ecb;
+        h5{
+            color: $color-letras ;
+            font-size: 250%;
+            text-align: center;
+            font-family: cursive;
+            margin-top: 0%;
+            margin-inline-start: 0;
+            font-weight: lighter;
+            margin-bottom: 0%  ;
+        }
+        .control{
+            width: 90%;
+            margin-top: 0%;
+            align-content: center;
+            margin-left: 3%;
+            margin-bottom: 2%;
+            padding: 11px 10px;
+            background-color:#f7e1cc ;
+            box-shadow: 1px 1px 1px $subcolor-letras ;
+            border: $subcolor-letras ;
+            font-size: 15px;
+            font-weight:bolder
+        }
+        .boton{ 
+            width: 90%; 
+            height: 40px;
+            margin-top: 0%;
+            margin-left: 4.6%;
+            color:#aa7e54cb
+            
+         }
+     }
+
+     /*Recetas*/
+
+     .contenedor-recetas {
+        display: grid;
+        height: 160vh;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'img-uno img-dos'
+        'img-tres img-cuatro'
+        'img-cinco img-seis'
+        'img-siete img-ocho';
+        border: #A2896C;
+        row-gap: 0.5rem;
+        column-gap: 0.5rem;
+        margin: 2rem 1rem;
+        .img-uno {
+            grid-area: img-uno;
+        }
+        .img-dos {
+            grid-area: img-dos;
+            }
+            
+            .img-tres {
+                grid-area: img-tres;
+            
+            }
+                
+            .img-cuatro {
+                grid-area: img-cuatro;
+            }
+                
+            .img-cinco {
+                grid-area: img-cinco;
+            }
+            
+            .img-seis {
+                grid-area: img-seis;
+            }
+            
+            .img-siete {
+                grid-area: img-siete;
+            }
+            
+            .img-ocho {
+                grid-area: img-ocho;
+            }
+            div{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+     }
+
+     .recetas{
+                color: $color-letras ;
+                font-size: 250%;
+                text-align: center;
+                font-family: cursive;
+                margin-top: 0%;
+                margin-inline-start: 0;
+                font-weight: lighter;
+                margin-bottom: 2%  ;
+               
+     }
+
+     .mainRecetas {
+        .contenedorPancakes{
+            position:relative  ;
+            margin-top: 50px;
+            border: $color-letras dotted 3px ;
+            margin: 1%;
+            padding: 1%;
+            
+            h4{
+                font-size: 1rem;
+                font-family: "B612 Mono", monospace;
+                font-weight: 400;
+                font-style: normal;
+                text-align: justify;
+                color: $color-letras ;
+                position:relative;
+            }
+            p{
+                font-size: 100%;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                margin-left: 0%;
+                text-align: justify;
+                color: $color-letras;
+            }
+            h6{
+                @extend %procedimiento;
+            }
+            .recetaPancake{
+                position:relative  ;
+                margin-top: 50px;
+                h6 {
+                   @include formato-recetas;
+                    }
+            }
+            ol {
+                @extend %procedimiento;
+            }
+        }
+        .recetas{
+            position:relative  ;
+            margin-top: 50px;
+            h6{
+                @include formato-recetas;
+            }
+            ul{
+                @extend %procedimiento;
+            }  
+            .procedimiento{
+                @extend %procedimiento;
+            }
+            
+        } 
+      
+     }
+
+    
+
+
+     @media screen and (max-width:600px){
+        .contenedor {
+            display: grid;
+            height: 150vh;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            'img-uno'
+            'img-dos'
+            'img-tres';
+            .img1{
+                grid-area: img-uno;
+            }
+            .img2 {
+                grid-area: img-dos;
+                }
+            .img3 {
+                grid-area: img-tres; 
+                }
+            a {
+                img{
+                    width: 100%;
+                    height: 60%;
+                    object-fit: cover 
+                }
+            }
+            }
+
+     }
+
+     @media screen and (min-width:601px) and (max-width:884px) {
+        .contenedor-recetas{
+            display: grid;
+            height: 160vh;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+            'img-uno img-dos img-tres'
+            'img-cuatro img-cinco img-seis'
+            'img-siete img-ocho img-ocho';
+            border: #A2896C;
+            row-gap: 0.5rem;
+            column-gap: 0.5rem;
+            margin: 2rem 1rem;
+            .img-uno{
+                grid-area: img-uno;     
+            }         
+            .img-dos {
+                grid-area: img-dos;
+                }
+                
+            .img-tres {
+                 grid-area: img-tres;
+                
+                }
+                    
+            .img-cuatro {
+                grid-area: img-cuatro;
+            }
+                    
+            .img-cinco {
+                grid-area: img-cinco;
+                }
+                
+            .img-seis {
+                grid-area: img-seis;
+                }
+                
+            .img-siete {
+                grid-area: img-siete;
+                }
+                
+            .img-ocho {
+                grid-area: img-ocho;
+                }
+            div{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+                   
+        }
+        .contenedorCaro{
+            display: flex;
+            margin-left:10%;
+            margin-top: 0%;
+            main{
+                .biografia{
+                    color: $subcolor-letras; 
+                    font-size: 10px;
+                    font-family: "B612 Mono", monospace;
+                    font-weight: 400;
+                    font-style: normal;
+                    margin-top: 3%;
+                    margin-right: 30%;
+                    font-weight: lighter;
+                    text-align: justify;   
+                    span{
+                         font-weight:800 ; 
+                    }
+                }
+            
+            }   
+        }
+     }
+
+     @media screen and (min-width:885px) {
+        .contenedor-recetas {
+            height: 50%;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: 
+            'img-uno img-dos img-tres img-cuatro'
+            'img-cinco img-seis img-siete img-ocho';
+            border: #A2896C;
+            row-gap: 0.5rem;
+            column-gap: 0.5rem;
+            margin: 2rem 1rem;
+            .img-uno {
+                grid-area: img-uno;
+            }
+            
+            .img-dos {
+            grid-area: img-dos;
+            }
+            
+            .img-tres {
+                grid-area: img-tres;
+            
+            }
+                
+            .img-cuatro {
+                grid-area: img-cuatro;
+            }
+                
+            .img-cinco {
+                grid-area: img-cinco;
+            }
+            
+            .img-seis {
+                grid-area: img-seis;
+            }
+            
+            .img-siete {
+                grid-area: img-siete;
+            }
+            
+            .img-ocho {
+                grid-area: img-ocho;
+            }
+            div{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover
+                }
+            }
+        }
+        .contenedorCaro{
+            display: flex;
+            margin-left:10%;
+            margin-top: 0%;
+            main{
+                .biografia{
+                    color: $subcolor-letras; 
+                    font-size: 15px;
+                    font-family: "B612 Mono", monospace;
+                    font-weight: 400;
+                    font-style: normal;
+                    margin-top: 3%;
+                    margin-right: 30%;
+                    font-weight: lighter;
+                    text-align: justify;   
+                    span{
+                         font-weight:800 ; 
+                    }
+                }
+            
+            }   
+        }
+     }
+        
+     .form-turnos{
+        h5{
+            color: $color-letras;
+            font-size: 250%;
+            text-align: center;
+            font-family: cursive;
+            margin-top: 0%;
+            margin-inline-start: 0;
+            font-weight: lighter;
+            margin-bottom: 0%  ;  
+        }
+        h6{
+            font-family: "miFuente" ;
+            color: $color-letras;
+            justify-content: center;
+            text-align: center;
+            margin-top: 0% ;
+        }
+        div{
+            text-align: center;
+            label{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: $color-letras;
+            .control1{
+                width: 30%;
+                margin-top: 1%;
+                margin-bottom: 1%;
+                padding: 10px 200px;
+                background-color:#f7e1cc ;
+                box-shadow: 1px 1px 1px $subcolor-letras ;
+                border: $subcolor-letras;
+                font-size: 15px;
+                font-weight:bolder;  
+
+        }
+     }
+    }
+}   
+
+.form-dias{
+    text-align: center;
+    label{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: $color-letras;
+        justify-content: center;
+        text-align: center;
+        margin-top: 0% ;  
+    }
+    .boton{
+        width: 30%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        padding: 10px 10px;
+        background-color:#f7e1cc ;
+        box-shadow: 1px 1px 1px $subcolor-letras ;
+        border: $subcolor-letras ;
+        font-size: 15px;
+        font-weight:lighter 
+    }
+}

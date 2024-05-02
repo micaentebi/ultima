@@ -1,0 +1,56 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#LogoInicia{
+    margin-left:40% ;
+}
+
+
+body{
+ font-family: Arial, Helvetica, sans-serif;
+
+}
+.form-iniciarsesion {
+    width: 300px;
+    height: 350px;
+    background-color:#e0c2a6cb ;
+    margin:auto;
+    margin-top: 30px;
+    box-shadow: 5px 11px 30px #9f754ecb;
+}
+
+h5 {
+    color: #aa7e54cb; 
+    font-size: 30px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    border-bottom:3px solid #9f754ecb;
+  
+}
+
+.control{
+    width: 90%;
+    margin-top: 30px;
+    align-content: center;
+    margin-left: 14px;
+    margin-bottom: 5px;
+    padding: 11px 10px;
+    background-color:#f7e1cc ;
+    box-shadow: 1px 1px 1px #9f754ecb ;
+    border: #9f754ecb ;
+    font-size: 15px;
+    font-weight:bolder
+}
+
+.boton{ 
+   width: 90%; 
+   height: 40px;
+   margin-top: 5%;
+   margin-left: 4.6%;
+   color:#aa7e54cb
+   
+}
+
